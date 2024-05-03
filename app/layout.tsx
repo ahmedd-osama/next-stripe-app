@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={tajwal.className}>
         <Navbar />
-        <main className="text-ce prose p-12">{children}</main>
+        <main>{children}</main>
         <Toaster />
       </body>
     </html>

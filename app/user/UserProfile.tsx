@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { User } from '@supabase/supabase-js';
 import { supabase } from '@/utils/supabaseClient';
 import LoginForm from './LoginForm';
+import PortalButton from '../portal/PortalButton';
 
 export default function UserProfile() {
   const [user, setUser] = useState<User | null>(null);
@@ -74,6 +75,7 @@ export default function UserProfile() {
                   <code>{JSON.stringify(stripeCustomer, null, 2)}</code>
                 </pre>
               </div>
+              <PortalButton />
             </>
           ) : (
             <div>
